@@ -1,1 +1,16 @@
 
+{
+  "name": "StreamLog",
+  "keywords": "CSV, CSVFormat, DataLoging",
+  "description": "To format and log data your sensor data coming from Arduino in a streamlined manner.",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/Abhijeetbyte/StreamLog.git"
+  },
+  "frameworks": "arduino",
+  "platforms":
+  [
+    "atmelavr"
+  ]
+}
