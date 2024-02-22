@@ -11,7 +11,7 @@ This streamlined approach eliminates the need for writing additional lines of co
 
 Import the [StreamLog](https://github.com/Abhijeetbyte/StreamLog.git) library in your Arduino sketch.
  
-Call the inbuilt *function* in your sketch 
+Call the Built-in functions of this library in your sketch 
 
 ex:
 ```
@@ -34,8 +34,9 @@ Here `delay` is the duration of the interval, you can also leave it as 0
 
 ## Output 🚀
 
+
+Output on the Arduino **Serial** monitor, of an LDR connected as analog input. <br/>
 You can also enable the timestamp feature of the Serial monitor, otherwise that column will be zero.<br/>
-Output on the Arduino **Serial** monitor, of an LDR connected as analog input.
 
 ```
 Timestamp (HH:MM:SS.MMM), Light Intensity,  Timelasped  ( S )
