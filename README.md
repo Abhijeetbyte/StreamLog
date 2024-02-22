@@ -11,7 +11,7 @@ This streamlined approach eliminates the need for writing additional lines of co
 
 Import the [StreamLog](https://github.com/Abhijeetbyte/StreamLog.git) library in your Arduino sketch.
  
-Call the inbuilt function 
+Call the inbuilt *function* in your sketch 
 
 ex:
 ```
@@ -26,14 +26,15 @@ StreamLog.data (delay, "dataName_1", data1Variable,  "dataName_2", "dataName_3",
 
 }
 ```
-Connect the board upload your sketch and turn on the serial monitor, you can also enable the timestamp feature of the Serial monitor.<br/>
-`delay` the duration of the interval, you can also leave it as 0
+Connect the board upload your sketch and turn on the serial monitor.<br/>
+Here `delay` is the duration of the interval, you can also leave it as 0
 
 <br/>
 
 
 ## Output 🚀
 
+You can also enable the timestamp feature of the Serial monitor, otherwise that column will be zero.<br/>
 Output on the Arduino **Serial** monitor, of an LDR connected as analog input.
 
 ```
