@@ -2,19 +2,21 @@
 #define STREAMLOG_H
 
 #include <Arduino.h>
-#include <stdarg.h>
 
 class StreamLog {
   public:
+    // Constructor
     StreamLog();
+
+    // Function to begin serial communication
     void begin(uint32_t baudRate);
-    void data(unsigned long interval, ...);
+
+    // Function to log data at specified intervals
+    void data(unsigned long interval, const char* sensorName, int sensorValue);
 
   private:
+    // Variable to store the previous millis() value
     unsigned long _previousMillis;
-    bool _headersPrinted;
-
-    void printHeaders(va_list args);
 };
 
 #endif
