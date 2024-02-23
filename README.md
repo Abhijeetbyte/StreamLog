@@ -12,7 +12,7 @@ This streamlined approach eliminates the need for writing additional lines of co
 
 Import the [StreamLog](https://github.com/Abhijeetbyte/StreamLog.git) library in your Arduino sketch.
  
-Call a **single** **function** of this library in your sketch, and put your data variables as parameters along with there names.
+Call the **functions** of this library in your sketch, and put your data variables as arguments along with their names.
 
 ex:
 ```
@@ -23,12 +23,18 @@ StreamLog.begin(9600); // intilize and define baud rate
 
 void loop(){
 
-StreamLog.data (delay, "dataName_1", data1Variable,  "dataName_2", "dataName_3", data3Variable, etc....);
+  sensorLogger.head("LDR1, LDR2, LDR3, etc....");
+  sensorLogger.data(5000, 3, LDR1intensity, LDR2intensity, LDR3ntensity, etc...);
 
 }
 ```
-Upload the sketch and turn on the serial monitor.<br/>
-Here `delay` is the duration of the interval, you can also leave it as 0
+Here,
+*  `StreamLog.head` function is for sensor data headings/names of columns
+*  In `StreamLog.data`
+   - 5000: Time interval between data logs in milliseconds (5 seconds)
+   - 3: Total number of sensor readings, including the delay and derived values
+Upload the sketch and turn on the serial monitor
+.<br/>
 
 <br/>
 
@@ -40,7 +46,7 @@ Output on the Arduino **Serial** monitor, of an LDR connected as analog input. <
 You can also enable the timestamp feature of the Serial monitor, otherwise timestamp column will be zero.<br/>
 
 ```
-Timestamp (HH:MM:SS.MMM), Light Intensity,  Timelasped  ( S )
+Timestamp (HH:MM:SS.MMM), Light Intensity,  Elapsed time ( S )
 16.53.45.687, 100, 0 
 16.58.00.011, 75, 300
 17.03.00.094, 46, 600
