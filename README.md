@@ -27,7 +27,7 @@ StreamLog.data (delay, "dataName_1", data1Variable,  "dataName_2", "dataName_3",
 
 }
 ```
-Connect the board upload your sketch and turn on the serial monitor.<br/>
+Upload the sketch and turn on the serial monitor.<br/>
 Here `delay` is the duration of the interval, you can also leave it as 0
 
 <br/>
@@ -37,7 +37,7 @@ Here `delay` is the duration of the interval, you can also leave it as 0
 
 
 Output on the Arduino **Serial** monitor, of an LDR connected as analog input. <br/>
-You can also enable the timestamp feature of the Serial monitor, otherwise that column will be zero.<br/>
+You can also enable the timestamp feature of the Serial monitor, otherwise timestamp column will be zero.<br/>
 
 ```
 Timestamp (HH:MM:SS.MMM), Light Intensity,  Timelasped  ( S )
