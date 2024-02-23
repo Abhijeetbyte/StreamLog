@@ -1,17 +1,18 @@
 # StreamLog
-The idea of streamlining your data logging process. The library's functionality is it to format and log data your sensor data coming from Arduino in a streamlined manner. 
+The idea of streamlining your data logging process. <br/>
+Library's functionality is it to format and log sensors data, coming from your microcontroller in a streamlined manner. 
 
 ## Need ? 🙄
 
-The StreamLog library simplifies the process of logging and formatting data from your Arduino sketch, allowing you to focus on your core logic without worrying about the intricacies of data formatting. With just one **function** call, you can log multiple data variables along with their corresponding names, and the library takes care of CSV formatting of your data, adding timestamps, and visualizing it directly on the Arduino Serial Console.
+The StreamLog library simplifies the process of logging and formatting data from your Arduino sketch, allowing you to focus on your core logic without worrying about the intricacies of data formatting. With just one **function** call, you can log multiple data variables along with their corresponding names, and the library takes care of CSV formatting of your data, adding timestamps, and visualizing it directly on the Arduino serial console.
 
-This streamlined approach eliminates the need for writing additional lines of code in your sketch for data logging purposes, saving you time and effort. You can easily use the logged data with any additional application for further analysis, visualization, or integration with other systems as it formats the raw Arduino data into a comma-separated file (CSV). Whether you're prototyping a project or developing a complex application where you want to monitor changes in data patterns over an extended period of time, StreamLog simplifies the process and enhances the efficiency of data logging and formatting within one platform without using any additional or third-party application.
+This streamlined approach eliminates the need for writing additional lines of code in your sketch for data logging purposes, saving your time and effort. You can easily use the logged data with any additional application for further analysis, visualization, or integration with other systems as it formats the raw Arduino data into a comma-separated file (CSV). Whether you're prototyping a project or developing a complex application where you want to monitor changes in data patterns over an extended period of time, StreamLog simplifies the process and enhances the efficiency of data logging and formatting within one platform without using any additional or third-party application.
 
 ## Working ⚙️
 
 Import the [StreamLog](https://github.com/Abhijeetbyte/StreamLog.git) library in your Arduino sketch.
  
-Call the Built-in functions of this library in your sketch 
+Call a **single** **function** of this library in your sketch, send put your data variables as parameters along with there name.
 
 ex:
 ```
