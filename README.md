@@ -23,8 +23,8 @@ StreamLog.begin(9600); // intilize and define baud rate
 
 void loop(){
 
-  sensorLogger.head("LDR1, LDR2, LDR3, etc....");
-  sensorLogger.data(5000, 3, LDR1intensity, LDR2intensity, LDR3ntensity, etc...);
+  StreamLog.head("LDR1, LDR2, LDR3, etc....");
+  StreamLog.data(5000, 3, LDR1intensity, LDR2intensity, LDR3ntensity, etc...);
 
 }
 ```
