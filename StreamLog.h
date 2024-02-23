@@ -1,19 +1,20 @@
-
 #ifndef STREAMLOG_H
 #define STREAMLOG_H
 
 #include <Arduino.h>
-#include <SoftwareSerial.h>
+#include <stdarg.h>
 
 class StreamLog {
   public:
-    StreamLog(); // Constructor
+    StreamLog();
     void begin(uint32_t baudRate);
     void data(unsigned long interval, ...);
 
   private:
-    uint32_t _previousMillis;
+    unsigned long _previousMillis;
     bool _headersPrinted;
+
+    void printHeaders(va_list args);
 };
 
 #endif
