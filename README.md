@@ -12,7 +12,7 @@ This streamlined approach eliminates the need for writing additional lines of co
 
 Import the [StreamLog](https://github.com/Abhijeetbyte/StreamLog.git) library in your Arduino sketch.
  
-Call a **single** **function** of this library in your sketch, send put your data variables as parameters along with there name.
+Call a **single** **function** of this library in your sketch, and put your data variables as parameters along with there names.
 
 ex:
 ```
