@@ -1,6 +1,6 @@
 # StreamLog
 The idea of streamlining your data logging process. <br/>
-Library's functionality is it to format and log sensors data, coming from your microcontroller in a streamlined manner. 
+Library functionality is to format and log sensor data, coming from your microcontroller in a streamlined manner. 
 
 ## Need ? 🙄
 
@@ -58,7 +58,7 @@ Timestamp (HH:MM:SS.MMM), Light Intensity,  Elapsed time ( S )
 
 ```
 
-This is data reading of sunset, the experiment was started just before sunset, and set to log data in an interval of every 5 minutes in `StreamLog.data(300, ..... );`
+This is data reading of sunset, the experiment was started just before sunset, and set to log data in an interval of every 5 minutes in `StreamLog.data(300000, ..... );`
 
 
 
