@@ -32,9 +32,13 @@ Here,
 *  `StreamLog.head` function is for sensor data headings/names of columns
 *  In `StreamLog.data`
    - 5000: Time interval between data logs in milliseconds (5 seconds)
-   - 3: Total number of sensor readings, including the delay and derived values
-Upload the sketch and turn on the serial monitor
-.<br/>
+   - 3: Total number of sensor readings, including the delay and other values
+     
+<br/>
+     
+Upload the sketch and turn on the serial monitor.
+
+<br/>
 
 <br/>
 
