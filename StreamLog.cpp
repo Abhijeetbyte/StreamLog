@@ -1,38 +1,44 @@
 #include "StreamLog.h"
-#include <stdarg.h>
 
+// Variable to keep track of whether headers are printed or not
+bool headersPrinted = false;
+
+// Constructor: Initialize variables
 StreamLog::StreamLog() {
   _previousMillis = 0;
 }
 
+// Function to begin serial communication
 void StreamLog::begin(uint32_t baudRate) {
+  // Initialize serial communication with the specified baud rate
   Serial.begin(baudRate);
 }
 
-void StreamLog::data(unsigned long interval, ...) {
+// Function to log data at specified intervals
+void StreamLog::data(unsigned long interval, const char* sensorHeading, int sensorValue) {
+  // Get the current time in milliseconds
   unsigned long currentMillis = millis();
+
+  // Check if the specified interval has elapsed since the last log
   if (currentMillis - _previousMillis >= interval * 1000) {
-    va_list args;
-    va_start(args, interval);
+    // Print headers if they haven't been printed yet
+    if (!headersPrinted) {
+      // Print column headers
+      Serial.print("Timestamps (HH:MM:SS)");
+      Serial.print(", ");                // comma for CSV format
+      Serial.println(sensorHeading);     // Additional header for additional column
+      // Update headersPrinted to indicate that headers are printed
+      headersPrinted = true;
+    }
 
-    // Print timestamp in seconds
+    // Print current time in seconds
     Serial.print(currentMillis / 1000);
-    Serial.print(", ");
-
-    // Print Elapsedtime header
-    Serial.print("Elapsedtime (s), ");
-
-    // Print sensor name
-    Serial.print(va_arg(args, const char*));
-    Serial.print(", ");
+    Serial.print(", ");  // comma for CSV format
 
     // Print sensor value
-    Serial.print(va_arg(args, int));
+    Serial.println(sensorValue);
 
-    Serial.println();
-    
-    va_end(args);
-
+    // Update the previousMillis variable to the current time
     _previousMillis = currentMillis;
   }
 }
