@@ -46,7 +46,7 @@ Upload the sketch and turn on the serial monitor.
 ## Output 🚀
 
 
-Output on the Arduino **Serial** monitor, of an LDR connected as analog input. <br/>
+Output on the Arduino **Serial** monitor as *CSV* format, of an LDR connected as analog input. <br/>
 You can also enable the timestamp feature of the Serial monitor, otherwise timestamp column will be zero.<br/>
 
 ```
