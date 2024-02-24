@@ -32,7 +32,7 @@ Here,
 *  `StreamLog.head` function is for sensor data headings/names of columns, this could be as many as you want.
 *  In `StreamLog.data`
    - 5000: Time interval between data logs in milliseconds (5 seconds)
-   - 3: Total number of variables ( sensor readings), including the delay and other values. This could be as many as want
+   - 3: Total number of variables ( sensor readings), including the delay and other values. This could be as many as you want.
      
 <br/>
      
