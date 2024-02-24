@@ -67,14 +67,14 @@ This is data reading of sunset, the experiment was started just before sunset, a
 
 ## Post Processing 👷‍♂️
 
-* Now after completing the experiment, just click on Serial monitor windows and copy everything.
-* Open any text editor, here I am opening Notepad, and pasting it there, Click on "Save As.." or click CTRl+Shift+S.
+* Now after completing the experiment, click on Serial monitor windows and copy everything.
+* Open any text editor, here I am opening Notepad, and past it there, Click on "Save As.." or click Ctrl+Shift+S.
 * Save it as **.CSV**
 
 ![image](https://github.com/Abhijeetbyte/StreamLog/assets/80936610/1fa30d83-23c3-4443-8a53-3a222a42032d)
 
 
-* Change "Text Documents (*.txt) to "All Files (*.)"
+* Change "Text Documents (.txt)" to "All Files"
 * You are done, the file was already in CSV format, just open it in MS Excel or anywhere else.
 Open it to see the changes in data over elapsed time or visualize the trend line
 
