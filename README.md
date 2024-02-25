@@ -85,3 +85,12 @@ Open it to see the changes in data over elapsed time or visualize the trend line
 <br/>
 <br/>
 
+## Download 👇
+<br/>
+
+* You can download the latest release of this library as zip : [download](https://github.com/Abhijeetbyte/StreamLog/releases)
+  <br/>
+* Or you install it from you **Arduino IDE** library manager
+  <br/>
+  <br/>
+![image](https://github.com/Abhijeetbyte/StreamLog/assets/80936610/84307640-85d6-4601-97fe-05dfeccc6718)
