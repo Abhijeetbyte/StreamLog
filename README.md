@@ -1,5 +1,25 @@
-# StreamLog
-The idea of streamlining your data logging process. <br/>
+
+<p align="center">
+    <h1 align="center">StreamLog</h1>
+    <h4 align="center">
+      The idea of streamlining your data logging process.
+    </h4>
+  <br>
+</p>
+
+
+<!-- Badge section -->
+
+[![Releases](https://img.shields.io/badge/Github-Releases-blue)](https://github.com/Abhijeetbyte/StreamLog/releases)
+![GitHub Tag](https://img.shields.io/github/v/tag/abhijeetbyte/StreamLog)
+[![License](https://img.shields.io/github/license/abhijeetbyte/StreamLog)](LICENSE)
+![GitHub top language](https://img.shields.io/github/languages/top/abhijeetbyte/streamlog)
+![arduino-library-badge](https://www.ardu-badge.com/badge/StreamLog.svg?)
+
+
+
+
+
 Library functionality is to format and log sensor data, coming from your microcontroller in a streamlined manner. 
 
 ## Need ? 🙄
