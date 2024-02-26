@@ -26,13 +26,37 @@ Library functionality is to format and log sensor data, coming from your microco
 
 The StreamLog library simplifies the process of logging and formatting data from your Arduino sketch, allowing you to focus on your core logic without worrying about the intricacies of data formatting. With just one **function** call, you can log multiple data variables along with their corresponding names, and the library takes care of CSV formatting of your data, adding timestamps, and visualizing it directly on the Arduino serial console.
 
-This streamlined approach eliminates the need for writing additional lines of code in your sketch for data logging purposes, saving your time and effort. You can easily use the logged data with any additional application for further analysis, visualization, or integration with other systems as it formats the raw Arduino data into a comma-separated file (CSV). Whether you're prototyping a project or developing a complex application where you want to monitor changes in data patterns over an extended period of time, StreamLog simplifies the process and enhances the efficiency of data logging and formatting within one platform without using any additional or third-party application.
+This streamlined approach eliminates the need for writing additional lines of code in your sketch for data logging purposes, saving your time and effort.<br/>
+You can easily use the logged data with any additional application for further analysis, visualization, or integration with other systems as it formats the raw Arduino data into a comma-separated file (CSV). Whether you're prototyping a project or developing a complex application where you want to monitor changes in data patterns over an extended period of time, StreamLog simplifies the process and enhances the efficiency of data logging and formatting within one platform without using any additional or third-party application.
+
+
+## Features 🌟
+* No, need to write extra codes for data formatting and printing on the serial monitor.
+* Standard data output as comma-separated file (CSV). 
+* Support custom time intervals for data output ( second, minutes, hours etc..)
+* Use any software to see your data ( Arduino serial monitor, PuTTY etc. ) as long it supports serial communication.
+* Available as plug-and-play, just import/include the library in your sketch. 
+<br/>
+
+## Download 👇
+<br/>
+
+* You can download the latest release of this library as zip : [download](https://github.com/Abhijeetbyte/StreamLog/releases) and import it using the library manager.
+  <br/> 
+* Or you can install it from your **Arduino IDE** library manager
+  <br/>
+  <br/>
+![image](https://github.com/Abhijeetbyte/StreamLog/assets/80936610/84307640-85d6-4601-97fe-05dfeccc6718)
+
+
+<br/>
+<br/>
 
 ## Working ⚙️
 
-Import the [StreamLog](https://github.com/Abhijeetbyte/StreamLog.git) library in your Arduino sketch.
+* Import the [StreamLog](https://github.com/Abhijeetbyte/StreamLog.git) library in your Arduino sketch.
  
-Call the **functions** of this library in your sketch, and put your data variables as arguments along with their names.
+* Call the **functions** of this library in your sketch, and put your data variables as arguments along with their names.
 
 ex:
 ```
@@ -105,12 +129,15 @@ Open it to see the changes in data over elapsed time or visualize the trend line
 <br/>
 <br/>
 
-## Download 👇
-<br/>
 
-* You can download the latest release of this library as zip : [download](https://github.com/Abhijeetbyte/StreamLog/releases)
-  <br/>
-* Or you install it from you **Arduino IDE** library manager
-  <br/>
-  <br/>
-![image](https://github.com/Abhijeetbyte/StreamLog/assets/80936610/84307640-85d6-4601-97fe-05dfeccc6718)
+
+## Reporting Issues & Contributions
+
+Feel free to report <b>[issues](https://github.com/Abhijeetbyte/StreamLog/issues/new)</b> and <b>contribute</b> to this repository
+
+
+## License
+
+Copyright © 2024 Abhijeet kumar. All rights reserved.
+
+Licensed under the [MIT License](LICENSE).
