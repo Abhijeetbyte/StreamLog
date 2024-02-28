@@ -2,7 +2,7 @@
 {
   "name": "StreamLog",
   "keywords": "CSV, CSVFormat, DataLoging",
-  "description": "To format and log data your sensor data coming from Arduino in a streamlined manner.",
+  "description": "To format and log sensor data as CSV, coming from Arduino in a streamlined manner.",
   "repository":
   {
     "type": "git",
