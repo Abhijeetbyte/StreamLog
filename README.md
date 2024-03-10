@@ -45,7 +45,6 @@ You can easily use the logged data with any additional application for further a
   <br/> 
 * Or you can install it from your **Arduino IDE** library manager
   <br/>
-  <br/>
 ![image](https://github.com/Abhijeetbyte/StreamLog/assets/80936610/84307640-85d6-4601-97fe-05dfeccc6718)
 
 
