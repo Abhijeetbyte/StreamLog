@@ -69,7 +69,7 @@ Whether you're **prototyping a new project** or developing a complex application
 
 **Example**:
 
-```
+```cpp
 void setup() {
 
   // Initialize serial communication with a baud rate of 9600
@@ -81,7 +81,7 @@ void setup() {
 
 ```
 
-```
+```cpp
 void loop() {
 
   // Read the analog value from the LDR sensor
