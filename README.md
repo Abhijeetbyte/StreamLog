@@ -14,7 +14,9 @@
 ![GitHub Tag](https://img.shields.io/github/v/tag/abhijeetbyte/StreamLog)
 [![License](https://img.shields.io/github/license/abhijeetbyte/StreamLog)](LICENSE)
 ![GitHub top language](https://img.shields.io/github/languages/top/abhijeetbyte/streamlog)
-![arduino-library-badge](https://www.ardu-badge.com/badge/StreamLog.svg?)
+[![arduino-library-badge](https://www.ardu-badge.com/badge/StreamLog.svg?)](https://downloads.arduino.cc/libraries/logs/github.com/Abhijeetbyte/StreamLog/)
+
+<!--https://github.com/arduino/library-registry-->
 
 
 
@@ -44,9 +46,13 @@ Whether you're **prototyping a new project** or developing a complex application
 ## Download 👇
 <br/>
 
-* You can download the latest release of this library as zip : [download](https://github.com/Abhijeetbyte/StreamLog/releases) and import it using the library manager.
-  <br/> 
-* Available on **Arduino IDE** library manager
+* You can [Download](https://github.com/Abhijeetbyte/StreamLog/releases) the latest release of this library as a zip and import it into your Arduino IDE.
+  <br/>
+  
+  **Or**
+  
+* Available on the [**Arduino IDE**]() library manager, you can search for it directly there.
+
   <br/>
   <br/>
 ![image](https://github.com/Abhijeetbyte/StreamLog/assets/80936610/84307640-85d6-4601-97fe-05dfeccc6718)
