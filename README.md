@@ -70,23 +70,33 @@ Whether you're **prototyping a new project** or developing a complex application
 **Example**:
 
 ```
-void setup (){
+void setup() {
 
-StreamLog.begin(9600); // intilize and define baud rate
+  // Initialize serial communication with a baud rate of 9600
+  sensorLogger.begin(9600); 
+
+  // Log the sensor data headings
+  sensorLogger.head("Light Intensity"); // Variable name or column heading
 }
 
-void loop(){
+```
 
-  StreamLog.head("LDR1, LDR2, LDR3, etc....");
-  StreamLog.data(5000, 3, LDR1intensity, LDR2intensity, LDR3ntensity, etc...);
+```
+void loop() {
 
+  // Read the analog value from the LDR sensor
+  int lightIntensity = analogRead(LDR_PIN);
+
+  // Log the sensor data
+  sensorLogger.data(300000, 1, lightIntensity); // Variable
 }
+
 ```
 Here,
-*  `StreamLog.head` function is for sensor data headings/names of columns, this could be as many as you want.
+*  `StreamLog.head` function is for sensor data heading/name of columns, this could be as many as you want.
 *  In `StreamLog.data`
-   - 5000: Time interval between data logs in milliseconds (5 seconds)
-   - 3: Total number of variables ( sensor readings), including the delay and other values. This could be as many as you want.
+   - 300000: Time interval between data logs in milliseconds ( 5 minutes)
+   - 1: Total number of variables ( sensor readings), this could be as many as you want.
      
 <br/>
      
@@ -104,15 +114,15 @@ Output on the Arduino **Serial** monitor as *CSV* format, of an LDR connected as
 You can also enable the timestamp feature of the Serial monitor, otherwise timestamp column will be zero.<br/>
 
 ```
-Timestamp (HH:MM:SS.MMM), Light Intensity,  Elapsed time ( S )
-16.53.45.687, 100, 0 
-16.58.00.011, 75, 300
-17.03.00.094, 46, 600
-17.08.00.014,  17,900
+Timestamps (HH:MM:SS), Elapsedtime (S), Light Intensity
+16.53.05.687,          300,                100
+16.58.10.011,          600,                75
+17.03.08.094,          900,                46
+17.08.06.014,          1200,               17
 
 ```
 
-This is data reading of sunset, the experiment was started just before sunset, and set to log data in an interval of every 5 minutes in `StreamLog.data(300000, ..... );`
+This is **data** reading of sunset, the experiment was started just before sunset, and set to log data in an interval of every 5 minutes in `StreamLog.data(300000, ..... );`
 
 
 
@@ -121,19 +131,18 @@ This is data reading of sunset, the experiment was started just before sunset, a
 
 ## Post Processing 👷‍♂️
 
-* Now after completing the experiment, click on Serial monitor windows and copy everything.
+* Now after completing the experiment, click on the Serial monitor window and copy everything.
 * Open any text editor, here I am opening Notepad, and past it there, Click on "Save As.." or click Ctrl+Shift+S.
 * Save it as **.CSV**
 
-![image](https://github.com/Abhijeetbyte/StreamLog/assets/80936610/1fa30d83-23c3-4443-8a53-3a222a42032d)
+![image](https://github.com/Abhijeetbyte/StreamLog/assets/80936610/53bb7a71-031a-490e-a604-66660909e372)
 
 
 * Change "Text Documents (.txt)" to "All Files"
 * You are done, the file was already in CSV format, just open it in MS Excel or anywhere else.
 Open it to see the changes in data over elapsed time or visualize the trend line
 
-![image](https://github.com/Abhijeetbyte/StreamLog/assets/80936610/2d5b4005-2000-4ff3-b7c7-76c815e10f2d)
-
+![image](https://github.com/Abhijeetbyte/StreamLog/assets/80936610/00167a72-2240-4bfa-bbe7-f9a80184c3b2)
 
 
 <br/>
