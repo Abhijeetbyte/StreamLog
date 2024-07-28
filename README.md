@@ -26,13 +26,11 @@ Library functionality is to format and log sensor data, coming from your microco
 
 ## Need ? 🙄
 
-The **StreamLog library** revolutionizes how you log and format data in your Arduino or similar microcontroller sketches, letting you concentrate on your core project instead of dealing with data formatting hassles. With a single **function call**, you can effortlessly log multiple data variables along with their names. The library handles **CSV formatting**, adds timestamps, and even visualizes data directly on the Arduino serial console or any other terminal program.
+The **StreamLog library** helps you log and format data in your Arduino or similar microcontroller sketches, letting you concentrate on your core project instead of dealing with data formatting hassles. With a single **function call**, you can effortlessly log **multiple data variables** along with their names. The library handles **CSV formatting**, adds timestamps, and even visualizes data directly on the Arduino serial console or any other terminal program.
 
 By simplifying the data logging process, **StreamLog** saves you time and effort. You no longer need to write extra lines of code inside your microcontroller for logging—**StreamLog** does it all for you. The logged data is formatted into a **comma-separated file (CSV)**, making it easy to use with any application for further analysis, visualization, or system integration.
 
 Whether you're **prototyping a new project** or developing a complex application where you need to monitor data patterns over time, **StreamLog** enhances efficiency. It simplifies the data logging and formatting process within a single platform, eliminating the need for additional or third-party applications.
-
-**Experience streamlined data logging and focus on what truly matters—your project.**
 
 
 ## Features 🌟
@@ -67,8 +65,6 @@ Whether you're **prototyping a new project** or developing a complex application
  
 * Call the **functions** of this library in your sketch, and put your data variables as arguments along with their names.
 
-**Example**:
-
 ```cpp
 void setup() {
 
@@ -88,7 +84,7 @@ void loop() {
   int lightIntensity = analogRead(LDR_PIN);
 
   // Log the sensor data
-  sensorLogger.data(300000, 1, lightIntensity); // Variable
+  sensorLogger.data(300000, 1, lightIntensity); // Variables
 }
 
 ```
